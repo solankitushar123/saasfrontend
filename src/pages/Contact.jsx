@@ -75,9 +75,9 @@ export default function Contact() {
               <p className="text-gray-400 leading-relaxed">Whether you have a detailed spec or just a napkin sketch — we want to hear about it. No project is too big or too small.</p>
             </div>
             {[
-              { icon: Mail, label: 'Email', value: 'hello@nexaforge.com', href: 'mailto:hello@nexaforge.com' },
-              { icon: Phone, label: 'Phone', value: '+1 (234) 567-890', href: 'tel:+1234567890' },
-              { icon: MapPin, label: 'Office', value: '123 Tech Street, San Francisco, CA 94102', href: '#' },
+              { icon: Mail, label: 'Email', value: 'hello@saasagency.com', href: 'mailto:hello@saasagency.com' },
+              { icon: Phone, label: 'Phone', value: '+91 97133 18696', href: 'tel:+919713318696' },
+              { icon: MapPin, label: 'Office', value: 'vijay nagar indore 453221', href: '#' },
             ].map(({ icon: Icon, label, value, href }) => (
               <div key={label} className="flex items-start gap-4 p-5 rounded-2xl" style={{ background: '#0a0f1e', border: '1px solid rgba(99,102,241,0.15)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(99,102,241,0.15)', border: '1px solid rgba(99,102,241,0.25)' }}>
@@ -109,12 +109,12 @@ export default function Contact() {
             ) : (
               <form onSubmit={handleSubmit} className="p-8 rounded-3xl space-y-5" style={{ background: '#0a0f1e', border: '1px solid rgba(255,255,255,0.06)' }}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <InputField name="name" label="Full Name" placeholder="John Smith" required />
-                  <InputField name="email" label="Work Email" type="email" placeholder="john@company.com" required />
+                  <InputField name="name" label="Full Name" placeholder="Dipesh Tiwari" required />
+                  <InputField name="email" label="Work Email" type="email" placeholder="dipesh@company.com" required />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <InputField name="company" label="Company Name" placeholder="Acme Inc." />
-                  <InputField name="phone" label="Phone" placeholder="+1 (555) 000-0000" />
+                  <InputField name="phone" label="Phone" placeholder="+91 (000) 000-000" />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
@@ -123,7 +123,7 @@ export default function Contact() {
                       className="w-full px-4 py-3 rounded-xl text-sm text-gray-300 focus:outline-none"
                       style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
                       <option value="" style={{ background: '#0a0f1e' }}>Select budget</option>
-                      {['< $5k', '$5k - $15k', '$15k - $50k', '$50k - $100k', '$100k+', 'Not sure'].map((b) => (
+                      {['< 5k', '5k - 15k', '15k - 50k', '50k - 100k', '100k+', 'Not sure'].map((b) => (
                         <option key={b} value={b} style={{ background: '#0a0f1e' }}>{b}</option>
                       ))}
                     </select>

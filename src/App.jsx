@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux'
 import { motion, AnimatePresence } from 'framer-motion'
 import { getMe } from './store/authSlice'
 import Layout from './components/layout/Layout'
-import AdminLayout from './components/layout/AdminLayout'
 import ProtectedRoute from './components/ui/ProtectedRoute'
 import PageLoader from './components/ui/PageLoader'
 import ScrollProgress from './components/ui/ScrollProgress'
@@ -18,13 +17,7 @@ const Pricing = lazy(() => import('./pages/Pricing'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const Contact = lazy(() => import('./pages/Contact'))
-const AdminLogin = lazy(() => import('./pages/admin/AdminLogin'))
-const Dashboard = lazy(() => import('./pages/admin/Dashboard'))
-const AdminProjects = lazy(() => import('./pages/admin/AdminProjects'))
-const AdminBlog = lazy(() => import('./pages/admin/AdminBlog'))
-const AdminServices = lazy(() => import('./pages/admin/AdminServices'))
-const AdminContacts = lazy(() => import('./pages/admin/AdminContacts'))
-const AdminTestimonials = lazy(() => import('./pages/admin/AdminTestimonials'))
+
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -64,16 +57,7 @@ export default function App() {
               <Route path="contact" element={<motion.div {...pageVariants}><Contact /></motion.div>} />
             </Route>
 
-            {/* Admin Routes */}
-            <Route path="/admin/login" element={<AdminLogin />} />
-            <Route path="/admin" element={<ProtectedRoute><AdminLayout /></ProtectedRoute>}>
-              <Route index element={<Dashboard />} />
-              <Route path="projects" element={<AdminProjects />} />
-              <Route path="blog" element={<AdminBlog />} />
-              <Route path="services" element={<AdminServices />} />
-              <Route path="contacts" element={<AdminContacts />} />
-              <Route path="testimonials" element={<AdminTestimonials />} />
-            </Route>
+            
           </Routes>
         </Suspense>
       </AnimatePresence>

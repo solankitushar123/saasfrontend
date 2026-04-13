@@ -117,10 +117,10 @@ function HeroSection() {
 function StatsSection() {
   const { ref, inView } = useIOInView({ triggerOnce: true, threshold: 0.3 })
   const stats = [
-    { icon: TrendingUp, value: 50, suffix: '+', label: 'Products Launched', color: '#6366f1' },
+    { icon: TrendingUp, value: 5, suffix: '+', label: 'Products Launched', color: '#6366f1' },
     { icon: Users, value: 99, suffix: '%', label: 'Client Satisfaction', color: '#06b6d4' },
-    { icon: Award, value: 8, suffix: '+', label: 'Years of Excellence', color: '#8b5cf6' },
-    { icon: Globe, value: 20, suffix: '+', label: 'Countries Served', color: '#f59e0b' },
+    { icon: Award, value: 2, suffix: '+', label: 'Years of Excellence', color: '#8b5cf6' },
+    { icon: Globe, value: 1, suffix: '+', label: 'Countries Served', color: '#f59e0b' },
   ]
   return (
     <section ref={ref} className="py-20 relative" style={{ background: '#0a0f1e', borderTop: '1px solid rgba(99,102,241,0.1)', borderBottom: '1px solid rgba(99,102,241,0.1)' }}>
@@ -269,9 +269,27 @@ function ProcessSection() {
 
 // ─── TESTIMONIALS ──────────────────────────────────────────────────────────
 const testimonials = [
-  { name: 'Sarah Chen', role: 'CTO, FinTech Solutions', avatar: 'https://i.pravatar.cc/100?img=1', text: 'NexaForge delivered our SaaS platform on time and beyond expectations. 500+ businesses now rely on it daily — flawlessly.', rating: 5 },
-  { name: 'Marcus Williams', role: 'CEO, HealthOS Inc.', avatar: 'https://i.pravatar.cc/100?img=3', text: 'They understood healthcare complexity and delivered a HIPAA-compliant platform that both doctors and patients love. Game-changer.', rating: 5 },
-  { name: 'Priya Sharma', role: 'Product Lead, EduTech', avatar: 'https://i.pravatar.cc/100?img=5', text: 'Our AI-powered learning platform reduced dropout rates by 40%. The team delivers exceptional technical work with stunning UX.', rating: 5 },
+  {
+    name: 'Rahul Mehta',
+    role: 'CTO, FinEdge India',
+    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    text: 'NexaForge delivered our SaaS platform on time with outstanding performance. 500+ Indian businesses rely on it daily — seamless and scalable.',
+    rating: 5
+  },
+  {
+    name: 'Ananya Gupta',
+    role: 'CEO, HealthCare Plus',
+    avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
+    text: 'They handled complex healthcare requirements and built a secure, compliant platform that works perfectly for both doctors and patients.',
+    rating: 5
+  },
+  {
+    name: 'Rohit Verma',
+    role: 'Product Lead, EduGrow',
+    avatar: 'https://randomuser.me/api/portraits/men/76.jpg',
+    text: 'Our AI-based learning platform saw a 40% drop in student churn. The UI/UX and backend quality exceeded expectations.',
+    rating: 5
+  }
 ]
 
 function TestimonialsSection() {

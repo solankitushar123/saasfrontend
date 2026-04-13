@@ -6,12 +6,48 @@ import { ArrowRight, Target, Eye, Heart, Rocket } from 'lucide-react'
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }
 
 const team = [
-  { name: 'Alex Morgan', role: 'CEO & Co-founder', bio: '15+ years building SaaS products. Previously at Stripe and Vercel.', avatar: 'https://i.pravatar.cc/150?img=12', color: '#6366f1' },
-  { name: 'Layla Hassan', role: 'CTO & Co-founder', bio: 'Systems architect. Scaled backends to 10M+ users at Shopify.', avatar: 'https://i.pravatar.cc/150?img=16', color: '#8b5cf6' },
-  { name: 'Jordan Kim', role: 'Head of Design', bio: 'Award-winning UX lead. Awwwards jury member, ex-Figma design team.', avatar: 'https://i.pravatar.cc/150?img=20', color: '#06b6d4' },
-  { name: 'Ravi Patel', role: 'Lead Engineer', bio: 'Full-stack wizard. Open-source contributor with 5K+ GitHub stars.', avatar: 'https://i.pravatar.cc/150?img=33', color: '#f59e0b' },
-  { name: 'Sofia Torres', role: 'AI/ML Lead', bio: 'ML engineer. PhD in Computer Science. Built AI products at Google.', avatar: 'https://i.pravatar.cc/150?img=45', color: '#10b981' },
-  { name: 'Marcus Lee', role: 'DevOps Lead', bio: 'Infrastructure expert. Maintains 99.99% uptime for all client systems.', avatar: 'https://i.pravatar.cc/150?img=53', color: '#ef4444' },
+  {
+    name: 'Tejasvi Solanki',
+    role: 'CEO & Co-founder',
+    bio: '3+ years building SaaS products for Indian startups. Led multiple successful product launches across fintech and edtech.',
+    avatar: 'https://randomuser.me/api/portraits/men/11.jpg',
+    color: '#6366f1'
+  },
+  {
+    name: 'Sourabh Singh Rajput',
+    role: 'CTO & Co-founder',
+    bio: 'Backend systems architect. Scaled cloud infrastructure handling lakhs of users with high availability.',
+    avatar: 'https://randomuser.me/api/portraits/women/21.jpg',
+    color: '#8b5cf6'
+  },
+  {
+    name: 'Kunal Sharma',
+    role: 'Head of Design',
+    bio: 'UX specialist focused on modern SaaS interfaces. Designs clean, conversion-focused user experiences.',
+    avatar: 'https://randomuser.me/api/portraits/men/31.jpg',
+    color: '#06b6d4'
+  },
+  {
+    name: 'Ravi Patel',
+    role: 'Lead Engineer',
+    bio: 'Full-stack developer with strong expertise in MERN stack. Builds scalable and optimized applications.',
+    avatar: 'https://randomuser.me/api/portraits/men/41.jpg',
+    color: '#f59e0b'
+  },
+  {
+    name: 'Sneha Iyer',
+    role: 'AI/ML Lead',
+    bio: 'AI engineer working on smart automation and recommendation systems for SaaS platforms.',
+    avatar: 'https://randomuser.me/api/portraits/women/51.jpg',
+    color: '#10b981'
+  },
+  {
+    name: 'Vikram Singh',
+    role: 'DevOps Lead',
+    bio: 'Cloud and DevOps expert managing deployments, CI/CD pipelines, and system reliability.',
+    avatar: 'https://randomuser.me/api/portraits/men/61.jpg',
+    color: '#ef4444'
+  },
 ]
 
 const values = [
@@ -22,11 +58,11 @@ const values = [
 ]
 
 const timeline = [
-  { year: '2016', event: 'Founded in San Francisco with 2 engineers and a bold vision.' },
-  { year: '2018', event: 'Launched first enterprise SaaS platform serving 10,000+ users.' },
-  { year: '2020', event: 'Expanded to AI/ML services. Grew team to 25 specialists.' },
-  { year: '2022', event: 'Reached $10M ARR milestone. Opened offices in London and Singapore.' },
-  { year: '2024', event: '50+ products launched globally. Named Top SaaS Agency by Forbes.' },
+  { year: '2024', event: 'Founded in San Francisco with 2 engineers and a bold vision.' },
+  { year: '2024', event: 'Launched first enterprise SaaS platform serving 10,000+ users.' },
+  { year: '2025', event: 'Expanded to AI/ML services. Grew team to 25 specialists.' },
+  { year: '2025', event: 'Reached $10M ARR milestone. Opened offices in London and Singapore.' },
+  { year: '2026', event: '5+ products launched globally. Named Top SaaS Agency by Forbes.' },
 ]
 
 export default function About() {
@@ -47,7 +83,7 @@ export default function About() {
             </span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-gray-400 text-xl max-w-2xl mx-auto">
-            Since 2016, we've been the engineering partner behind some of the world's fastest-growing SaaS companies.
+            Since 2023, we've been the engineering partner behind some of the world's fastest-growing SaaS companies.
           </motion.p>
         </div>
       </section>
@@ -108,7 +144,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-sm font-medium mb-3" style={{ color: '#6366f1' }}>OUR JOURNEY</p>
-            <h2 className="font-display font-extrabold text-4xl text-white">8 Years of Building</h2>
+            <h2 className="font-display font-extrabold text-4xl text-white">2 Years of Building</h2>
           </div>
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-px" style={{ background: 'linear-gradient(to bottom, #6366f1, transparent)' }} />

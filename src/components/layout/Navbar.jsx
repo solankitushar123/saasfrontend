@@ -75,12 +75,6 @@ export default function Navbar() {
             {/* CTA */}
             <div className="hidden lg:flex items-center gap-3">
               <Link
-                to="/admin/login"
-                className="text-sm text-gray-400 hover:text-white transition-colors px-4 py-2"
-              >
-                Admin
-              </Link>
-              <Link
                 to="/contact"
                 className="text-sm font-semibold text-white px-5 py-2.5 rounded-xl transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#6366f1,#8b5cf6)', boxShadow: '0 0 20px rgba(99,102,241,0.35)' }}

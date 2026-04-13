@@ -53,11 +53,11 @@ export default function Footer() {
               <a href="mailto:hello@nexaforge.com" className="flex items-center gap-2 hover:text-primary-400 transition-colors">
                 <Mail size={14} /><span>hello@nexaforge.com</span>
               </a>
-              <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-primary-400 transition-colors">
-                <Phone size={14} /><span>+1 (234) 567-890</span>
+              <a href="tel:+919713318696" className="flex items-center gap-2 hover:text-primary-400 transition-colors">
+                <Phone size={14} /><span>+91 97133 18696</span>
               </a>
               <span className="flex items-center gap-2">
-                <MapPin size={14} /><span>San Francisco, CA 94102</span>
+                <MapPin size={14} /><span>vijay nagar indore 453221</span>
               </span>
             </div>
             <div className="flex items-center gap-3 mt-6">
