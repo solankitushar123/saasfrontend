@@ -5,7 +5,7 @@ import { CheckCircle, X, ArrowRight } from 'lucide-react'
 
 const plans = [
   {
-    name: 'Starter', monthlyPrice: 4999, yearlyPrice: 3999, color: '#6366f1', highlight: false,
+    name: 'Starter', monthlyPrice: 19999, yearlyPrice: 49999, color: '#6366f1', highlight: false,
     desc: 'Perfect for MVPs and early-stage startups validating an idea.',
     features: [
       { text: 'Up to 3 core features', included: true },
@@ -21,7 +21,7 @@ const plans = [
     ],
   },
   {
-    name: 'Professional', monthlyPrice: 14999, yearlyPrice: 11999, color: '#8b5cf6', highlight: true,
+    name: 'Professional', monthlyPrice: 49999, yearlyPrice: 119999, color: '#8b5cf6', highlight: true,
     desc: 'Ideal for funded startups and growing businesses ready to scale.',
     features: [
       { text: 'Unlimited features', included: true },
@@ -55,10 +55,10 @@ const plans = [
 ]
 
 const addons = [
-  { name: 'UI/UX Design Sprint', price: '$2,499', desc: 'Figma wireframes + interactive prototype for your core flows' },
-  { name: 'SEO & Analytics Setup', price: '$999', desc: 'GA4, Search Console, sitemap, and technical SEO audit' },
-  { name: 'Extra Support Month', price: '$1,499/mo', desc: 'Extended maintenance and feature request support' },
-  { name: 'Performance Audit', price: '$1,299', desc: 'Core Web Vitals, Lighthouse, and load testing report' },
+  { name: 'UI/UX Design Sprint', price: '7,499', desc: 'Figma wireframes + interactive prototype for your core flows' },
+  { name: 'SEO & Analytics Setup', price: '4,999', desc: 'GA4, Search Console, sitemap, and technical SEO audit' },
+  { name: 'Extra Support Month', price: '2,499/mo', desc: 'Extended maintenance and feature request support' },
+  { name: 'Performance Audit', price: '2,299', desc: 'Core Web Vitals, Lighthouse, and load testing report' },
 ]
 
 const faqs = [
@@ -116,7 +116,7 @@ export default function Pricing() {
                   <p className="text-gray-400 text-sm mb-5">{plan.desc}</p>
                   <div className="flex items-end gap-1 mb-1">
                     <span className="font-display font-extrabold text-5xl text-white">
-                      {plan.monthlyPrice ? `$${(yearly ? plan.yearlyPrice : plan.monthlyPrice).toLocaleString()}` : 'Custom'}
+                      {plan.monthlyPrice ? `${(yearly ? plan.yearlyPrice : plan.monthlyPrice).toLocaleString()}` : 'Custom'}
                     </span>
                     {plan.monthlyPrice && <span className="text-gray-400 mb-2">/project</span>}
                   </div>

@@ -1,8 +1,10 @@
 import { Suspense, lazy, useRef, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
-import { ArrowRight, Play, CheckCircle, Star, TrendingUp, Users, Award, Globe, ChevronRight, Zap } from 'lucide-react'
+import { ArrowRight, Play, CheckCircle, Star, TrendingUp, Users, Award, Globe, ChevronRight} from 'lucide-react'
 import CountUp from 'react-countup'
+import RadheImg from '../static/Radhe.png';
+import NamanImg from '../static/naman.jpeg';
 import { useInView as useIOInView } from 'react-intersection-observer'
 
 const HeroScene = lazy(() => import('../components/3d/HeroScene'))
@@ -40,7 +42,6 @@ function HeroSection() {
             className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full text-sm font-medium"
             style={{ background: 'rgba(99,102,241,0.12)', border: '1px solid rgba(99,102,241,0.3)', color: '#a5b4fc' }}
           >
-            <Zap size={14} fill="currentColor" />
             <span>Trusted by 50+ Global SaaS Companies</span>
           </motion.div>
 
@@ -153,10 +154,14 @@ function StatsSection() {
 const services = [
   { icon: '☁️', title: 'SaaS Development', desc: 'End-to-end SaaS platforms with multi-tenancy, subscription billing, and enterprise scalability.', color: '#6366f1', delay: 0 },
   { icon: '🌐', title: 'Web App Development', desc: 'High-performance progressive web applications that delight users across every device.', color: '#06b6d4', delay: 0.1 },
-  { icon: '🧠', title: 'AI Integration', desc: 'Supercharge your product with LLM integration, computer vision, and ML-powered automation.', color: '#8b5cf6', delay: 0.2 },
-  { icon: '🎨', title: 'UI/UX Design', desc: 'Award-worthy design systems and interfaces crafted for maximum conversion and user delight.', color: '#f59e0b', delay: 0.3 },
-  { icon: '🔌', title: 'API Development', desc: 'Scalable REST and GraphQL APIs built for speed, security, and developer experience.', color: '#10b981', delay: 0.4 },
-  { icon: '☁️', title: 'Cloud Solutions', desc: 'AWS, GCP, and Azure infrastructure design with Kubernetes orchestration and CI/CD pipelines.', color: '#ef4444', delay: 0.5 },
+  { icon: '📱', title: 'Android Development', desc: 'Native Android applications with seamless user experiences and robust performance.', color: '#8b5cf6', delay: 0.2 },
+  { icon: '🧠', title: 'AI Integration', desc: 'Supercharge your product with LLM integration, computer vision, and ML-powered automation.', color: '#8b5cf6', delay: 0.3 },
+  { icon: '🎨', title: 'UI/UX Design', desc: 'Award-worthy design systems and interfaces crafted for maximum conversion and user delight.', color: '#f59e0b', delay: 0.4 },
+  { icon: '🔌', title: 'API Development', desc: 'Scalable REST and GraphQL APIs built for speed, security, and developer experience.', color: '#10b981', delay: 0.5 },
+  { icon: '☁️', title: 'Cloud Solutions', desc: 'AWS, GCP, and Azure infrastructure design with Kubernetes orchestration and CI/CD pipelines.', color: '#ef4444', delay: 0.6   },
+  { icon: '🛠️', title: 'Maintenance & Support', desc: 'Ongoing support plans with 24/7 monitoring, performance optimization, and feature updates.', color: '#6366f1', delay: 0.7 },
+  { icon: '⚙️', title: 'Custom Software', desc: 'Tailored software solutions beyond SaaS, including internal tools, automation, and integrations.', color: '#06b6d4', delay: 0.8 },
+
 ]
 
 function ServicesSection() {
@@ -270,17 +275,17 @@ function ProcessSection() {
 // ─── TESTIMONIALS ──────────────────────────────────────────────────────────
 const testimonials = [
   {
-    name: 'Rahul Mehta',
-    role: 'CTO, FinEdge India',
-    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
-    text: 'NexaForge delivered our SaaS platform on time with outstanding performance. 500+ Indian businesses rely on it daily — seamless and scalable.',
+    name: 'Radheshyam Pattaiya',
+    role: 'CTO, The Alpha School, India',
+    avatar: RadheImg,
+    text: 'Shivora delivered our SaaS platform on time with outstanding performance. 500+ Indian businesses rely on it daily — seamless and scalable.',
     rating: 5
   },
   {
-    name: 'Ananya Gupta',
-    role: 'CEO, HealthCare Plus',
-    avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
-    text: 'They handled complex healthcare requirements and built a secure, compliant platform that works perfectly for both doctors and patients.',
+    name: 'Naman Narware',
+    role: 'CEO, Zinger Grossery, India',
+    avatar: NamanImg,
+    text: 'They built a fast, reliable grocery platform that ensures seamless ordering, real-time tracking, and a smooth experience for both customers and delivery partners.',
     rating: 5
   },
   {
@@ -336,8 +341,8 @@ function TestimonialsSection() {
 // ─── PRICING PREVIEW ──────────────────────────────────────────────────────────
 function PricingPreviewSection() {
   const plans = [
-    { name: 'Starter', price: '$4,999', desc: 'Perfect for MVPs and early-stage startups.', features: ['Up to 3 core features', 'Mobile responsive design', 'Basic API integration', 'QA & testing', '2 weeks post-launch support'], color: '#6366f1', highlight: false },
-    { name: 'Professional', price: '$14,999', desc: 'Ideal for growing products that need scale.', features: ['Unlimited features', '3D UI & animations', 'AI integration', 'Admin dashboard', 'Payment integration', '60-day support'], color: '#8b5cf6', highlight: true },
+    { name: 'Starter', price: '19,999', desc: 'Perfect for MVPs and early-stage startups.', features: ['Up to 3 core features', 'Mobile responsive design', 'Basic API integration', 'QA & testing', '2 weeks post-launch support'], color: '#6366f1', highlight: false },
+    { name: 'Professional', price: '49,999', desc: 'Ideal for growing products that need scale.', features: ['Unlimited features', '3D UI & animations', 'AI integration', 'Admin dashboard', 'Payment integration', '60-day support'], color: '#8b5cf6', highlight: true },
     { name: 'Enterprise', price: 'Custom', desc: 'Full-scale enterprise SaaS solutions.', features: ['Custom architecture', 'Dedicated team', 'Multi-tenant system', 'Advanced security', 'SLA guarantee', 'Lifetime support'], color: '#06b6d4', highlight: false },
   ]
 

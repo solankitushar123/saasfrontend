@@ -13,9 +13,12 @@ const footerLinks = {
   Services: [
     { label: 'SaaS Development', to: '/services' },
     { label: 'Web App Development', to: '/services' },
+    { label: 'Android Development', to: '/services' },
     { label: 'AI Integration', to: '/services' },
     { label: 'UI/UX Design', to: '/services' },
     { label: 'Cloud Solutions', to: '/services' },
+    { label: 'Maintenance & Support', to: '/services' },
+    { label: 'Custom Software', to: '/services' },
   ],
   Legal: [
     { label: 'Privacy Policy', to: '/' },
@@ -41,17 +44,23 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-5">
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg,#6366f1,#8b5cf6)' }}>
-                <Zap size={18} className="text-white" fill="white" />
-              </div>
-              <span className="font-display font-bold text-xl text-white">Nexa<span style={{ color: '#6366f1' }}>Forge</span></span>
+            
+              <span
+  style={{
+    background: "linear-gradient(90deg, #6366f1, #8b5cf6, #06b6d4)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"
+  }}
+>
+  Shivora
+</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs mb-6">
               We build future-ready SaaS products that scale. From MVP to enterprise — your technology partner for the long run.
             </p>
             <div className="flex flex-col gap-3 text-sm text-gray-400">
-              <a href="mailto:hello@nexaforge.com" className="flex items-center gap-2 hover:text-primary-400 transition-colors">
-                <Mail size={14} /><span>hello@nexaforge.com</span>
+              <a href="mailto:hello@Shivora.com" className="flex items-center gap-2 hover:text-primary-400 transition-colors">
+                <Mail size={14} /><span>hello@Shivora.com</span>
               </a>
               <a href="tel:+919713318696" className="flex items-center gap-2 hover:text-primary-400 transition-colors">
                 <Phone size={14} /><span>+91 97133 18696</span>
@@ -92,7 +101,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-          <p className="text-xs text-gray-500">© {new Date().getFullYear()} NexaForge Agency. All rights reserved.</p>
+          <p className="text-xs text-gray-500">© {new Date().getFullYear()} Shivora Agency. All rights reserved.</p>
           <p className="text-xs text-gray-600">Built with ❤️ using MERN Stack + React Three Fiber</p>
         </div>
       </div>

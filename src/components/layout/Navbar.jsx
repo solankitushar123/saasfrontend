@@ -43,12 +43,17 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center relative overflow-hidden" style={{ background: 'linear-gradient(135deg,#6366f1,#8b5cf6)' }}>
-                <Zap size={18} className="text-white z-10" fill="white" />
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(135deg,#8b5cf6,#06b6d4)' }} />
-              </div>
+             
               <span className="font-display font-bold text-xl text-white">
-                Nexa<span style={{ color: '#6366f1' }}>Forge</span>
+                <span
+  style={{
+    background: "linear-gradient(90deg, #6366f1, #8b5cf6, #06b6d4)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"
+  }}
+>
+  Shivora
+</span>
               </span>
             </Link>
 
