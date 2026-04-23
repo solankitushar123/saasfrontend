@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Zap } from 'lucide-react'
+import logo from '../../../logo/logo.png'
 
 const navLinks = [
   { label: 'Home', to: '/' },
@@ -42,19 +43,17 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
+            
             <Link to="/" className="flex items-center gap-2 group">
-             
-              <span className="font-display font-bold text-xl text-white">
-                <span
+            
+              <img src={logo} alt="Shivora Logo" className="w-10 h-10 rounded-full group-hover:animate-pulse" /><span
   style={{
     background: "linear-gradient(90deg, #6366f1, #8b5cf6, #06b6d4)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent"
   }}
->
-  Shivora
+>Shivora
 </span>
-              </span>
             </Link>
 
             {/* Desktop Nav */}

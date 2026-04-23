@@ -8,7 +8,7 @@ export default function PageLoader() {
           <div className="absolute inset-0 rounded-full" style={{border:'2px solid transparent', borderTopColor:'#6366f1'}} />
         </motion.div>
         <div className="flex gap-0.5">
-          {['N','e','x','a','F','o','r','g','e'].map((l, i) => (
+          {['s','h','i','v','o','r','a'].map((l, i) => (
             <motion.span key={i} className="font-display font-bold text-2xl" style={{background:'linear-gradient(135deg,#6366f1,#8b5cf6,#06b6d4)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent'}} animate={{ y: [0, -10, 0] }} transition={{ duration: 0.6, delay: i * 0.06, repeat: Infinity }}>{l}</motion.span>
           ))}
         </div>

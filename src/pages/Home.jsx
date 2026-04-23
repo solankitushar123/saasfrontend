@@ -42,7 +42,7 @@ function HeroSection() {
             className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full text-sm font-medium"
             style={{ background: 'rgba(99,102,241,0.12)', border: '1px solid rgba(99,102,241,0.3)', color: '#a5b4fc' }}
           >
-            <span>Trusted by 50+ Global SaaS Companies</span>
+            <span>Trusted by 10+ International SaaS Companies</span>
           </motion.div>
 
           <motion.h1
